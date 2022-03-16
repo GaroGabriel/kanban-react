@@ -1,9 +1,14 @@
 import React from 'react';
 import './testing.scss'
+
 const Testing = () => {
     return (
         <div>
-            <h1 className='tester'>testing</h1>
+            <div className='tester'>
+                <h1 className="tester__header">
+                    testing <span className='tester__header-big'>444</span>
+                </h1>
+            </div>
         </div>
     );
 };

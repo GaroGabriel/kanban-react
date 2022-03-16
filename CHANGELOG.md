@@ -1,5 +1,11 @@
 # KANBAN
 
+
+# [v1.0.2](https://github.com/GaroGabriel/kanban-react)
+- added fontawesome icons
+- columns header 
+- columns header menu
+
 # [v1.0.1](https://github.com/GaroGabriel/kanban-react)
 - clear default react-app project
 - `npm i node-sass`
