@@ -1,0 +1,10 @@
+@import "src/variables/scss/mixins";
+@import "src/variables/scss/variables";
+
+
+.columnsHeader{
+  @include flex(flex-end , center);
+  background: $Alto;
+  padding:8px;
+  border-radius:$border-radius ;
+}

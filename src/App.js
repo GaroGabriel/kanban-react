@@ -1,12 +1,11 @@
-import './variables/scss/_variables.scss';
-import {Testing} from "./components";
-
-
+import {ColumnS, Testing} from "./components";
+import './App.scss'
 
 function App() {
     return (
-        <div className="App">
-            <Testing/>
+        <div className="App container">
+            {/*<Testing/>*/}
+            <ColumnS/>
         </div>
     );
 }

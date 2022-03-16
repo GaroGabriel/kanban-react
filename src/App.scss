@@ -1,0 +1,10 @@
+@import "./src/variables/scss/variables";
+@import "./src/variables/scss/mixins";
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
