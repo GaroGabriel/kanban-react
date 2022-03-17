@@ -3,3 +3,10 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
+
+
+//headers
+@mixin h5() {
+  font-size: 18px;
+  padding: 10px 0;
+}
