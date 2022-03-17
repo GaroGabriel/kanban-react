@@ -1,0 +1,34 @@
+@import "./src/variables/scss/variables";
+@import "./src/variables/scss/mixins";
+
+.popup {
+  position: absolute;
+  right: 0;
+  border-radius: $border-radius;
+  overflow: hidden;
+  padding: 20px;
+  background: $Silver-Chalice;
+  box-shadow:$box-shadow ;
+  user-select: none;
+  &__header{
+    @include h5();
+    text-align: center;
+  }
+
+  &__list {
+    list-style: none;
+  }
+  &__link {
+    line-height: 35px;
+    cursor: pointer;
+    padding:10px 15px;
+
+    &:hover{
+      background: $Alto;
+border-radius: $border-radius;
+    }
+  }
+  &__item{
+    padding: 20px;
+  }
+}

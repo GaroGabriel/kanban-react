@@ -1,5 +1,9 @@
 # KANBAN
 
+# [v1.0.3](https://github.com/GaroGabriel/kanban-react)
+- UI components
+- settings popup
+
 
 # [v1.0.2](https://github.com/GaroGabriel/kanban-react)
 - added fontawesome icons

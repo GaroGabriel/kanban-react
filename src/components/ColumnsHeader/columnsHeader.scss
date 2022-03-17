@@ -4,7 +4,7 @@
 
 .columnsHeader{
   @include flex(flex-end , center);
+  position: relative;
   background: $Alto;
-  padding:8px;
   border-radius:$border-radius ;
 }

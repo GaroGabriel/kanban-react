@@ -1,0 +1,17 @@
+@import "./src/variables/scss/variables";
+
+.buttonDots {
+  position: relative;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: $Gondola;
+  border-radius: $border-radius;
+
+  &-active {
+    background: $Silver-Chalice;
+  }
+  &:hover {
+    background: $Silver-Chalice;
+  }
+}
