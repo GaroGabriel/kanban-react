@@ -1,4 +1,5 @@
 @import "./src/variables/scss/variables";
+@import "./src/variables/scss/mixins";
 
 .buttonDots {
   position: relative;
@@ -8,10 +9,4 @@
   color: $Gondola;
   border-radius: $border-radius;
 
-  &-active {
-    background: $Silver-Chalice;
-  }
-  &:hover {
-    background: $Silver-Chalice;
-  }
 }

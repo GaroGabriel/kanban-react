@@ -4,6 +4,7 @@ export {default as Column} from './ColumnS/Column/Column'
 export {default as ColumnsHeader} from './ColumnS/ColumnsHeader/ColumnsHeader'
 export {default as ColumnsHeaderSettings} from './ColumnS/ColumnsHeaderSettings/ColumnsHeaderSettings'
 export {default as Popup} from './UI/Popup/Popup'
+export {default as ColumnHeader} from './ColumnS/Column/ColumnHeader/ColumnHeader'
 
 
 // UX

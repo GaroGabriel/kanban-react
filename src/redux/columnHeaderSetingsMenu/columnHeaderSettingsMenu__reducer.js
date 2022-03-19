@@ -8,17 +8,17 @@ const columnHeaderSettingsMenu = {
         {
             id: uniqid(),
             icon: faChartSimple,
-            item: 'Add Column'
+            item: 'Some Command'
         },
         {
             id: uniqid(),
             icon: faChartSimple,
-            item: 'Add Column'
+            item: 'Do Something'
         },
         {
             id: uniqid(),
             icon: faBuildingColumns,
-            item: 'blblb'
+            item: 'bla bla'
         },
     ]
 }

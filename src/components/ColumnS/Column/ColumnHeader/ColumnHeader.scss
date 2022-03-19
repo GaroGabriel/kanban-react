@@ -1,0 +1,17 @@
+@import "src/variables/scss/mixins";
+@import "src/variables/scss/variables";
+
+.columnHeader {
+  @include flex(space-between);
+  background: #e7e78f;
+  position: sticky;
+  width: 100%;
+  top: -20px;
+  border-top-left-radius:$border-radius ;
+  border-top-right-radius:$border-radius ;
+  left: 0;
+
+  &__wrapper {
+    @include flex()
+  }
+}

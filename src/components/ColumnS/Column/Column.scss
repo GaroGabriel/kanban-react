@@ -1,2 +1,11 @@
 @import "../../../variables/scss/variables";
 
+.column{
+  max-width: 300px;
+  border-left: solid 1px $Silver-Chalice;
+  border-right: solid 1px $Silver-Chalice;
+  border-bottom: solid 1px $Silver-Chalice;
+  border-radius: $border-radius;
+  //overflow: hidden;
+  position: relative;
+}
