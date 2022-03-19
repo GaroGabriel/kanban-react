@@ -1,6 +1,17 @@
 @import "./src/variables/scss/variables";
+@import "./src/variables/scss/mixins";
 
-.columns{
-  background: #5b8c5b;
+.columnS {
+  //background: #5b8c5b;
   border-radius: $border-radius;
+  height: 100vh;
+  overflow: hidden;
+  &__wrapper {
+    @include flex(flex-start, flex-start);
+    overflow: scroll;
+    padding-left: 20px;
+    padding-top: 20px;
+    height: calc(100% - 32px);
+    width: 100%;
+  }
 }

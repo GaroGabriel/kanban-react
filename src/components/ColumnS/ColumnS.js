@@ -4,9 +4,12 @@ import {Column, ColumnsHeader} from "../index";
 
 const ColumnS = () => {
     return (
-        <div className='columns'>
+        <div className='columnS'>
             <ColumnsHeader/>
-            <Column/>
+            <div className="columnS__wrapper">
+                <Column/>
+
+            </div>
         </div>
     );
 };

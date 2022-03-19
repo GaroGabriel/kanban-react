@@ -1,5 +1,15 @@
 @import "../../../variables/scss/variables";
+@import "../../../variables/scss/mixins";
 
 .columnsHeaderSettings {
 
+  &__buttonDots {
+    @include transition_default(background);
+    &-active {
+      background: $Silver-Chalice;
+    }
+    &:hover {
+      background: $Silver-Chalice;
+    }
+  }
 }

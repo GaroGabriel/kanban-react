@@ -3,6 +3,7 @@
 
 .popup {
   position: absolute;
+  z-index: 3;
   right: 0;
   border-radius: $border-radius;
   overflow: hidden;
@@ -10,6 +11,7 @@
   background: $Silver-Chalice;
   box-shadow:$box-shadow ;
   user-select: none;
+
   &__header{
     @include h5();
     text-align: center;
@@ -22,10 +24,11 @@
     line-height: 35px;
     cursor: pointer;
     padding:10px 15px;
-
+    border-radius: $border-radius;
+    @include transition_default(background);
     &:hover{
       background: $Alto;
-border-radius: $border-radius;
+
     }
   }
   &__item{

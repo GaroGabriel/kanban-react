@@ -1,9 +1,13 @@
-@mixin flex($justify-content,$align-items) {
+@mixin flex($justify-content:center,$align-items:center,$flex-wrap:nowrap) {
   display: flex;
   justify-content: $justify-content;
   align-items: $align-items;
-}
+  flex-wrap: $flex-wrap;
 
+}
+@mixin transition_default($transition__target:all){
+  transition: background ease-in-out 0.2s;
+}
 
 //headers
 @mixin h5() {

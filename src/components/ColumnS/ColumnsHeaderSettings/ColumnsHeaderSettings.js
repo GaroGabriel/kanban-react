@@ -38,6 +38,7 @@ const ColumnsHeaderSettings = () => {
     return (
         <div className='columnsHeaderSettings'>
             <ButtonDots
+                propClass={'columnsHeaderSettings__buttonDots'}
                 active={showSettingsPopup}
                 onClick={() => {
                     showHideMenu()
