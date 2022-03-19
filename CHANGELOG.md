@@ -1,6 +1,11 @@
 # KANBAN
 
 # [v1.0.3](https://github.com/GaroGabriel/kanban-react)
+- redux setup
+- settings popup
+
+
+# [v1.0.3](https://github.com/GaroGabriel/kanban-react)
 - UI components
 - settings popup
 
