@@ -1,6 +1,6 @@
 import React from 'react';
 import './columnsHeader.scss'
-import {ColumnsHeaderSettings} from "../index";
+import {ColumnsHeaderSettings} from "../../index";
 
 const ColumnsHeader = () => {
     return (

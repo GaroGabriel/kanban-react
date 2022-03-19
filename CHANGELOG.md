@@ -2,6 +2,7 @@
 
 # [v1.0.4](https://github.com/GaroGabriel/kanban-react)
 - redux setup
+- debug columns header settings popup close
 
 
 
