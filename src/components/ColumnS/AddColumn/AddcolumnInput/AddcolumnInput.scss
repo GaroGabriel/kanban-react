@@ -1,0 +1,35 @@
+@import "./src/variables/scss/mixins";
+@import "./src/variables/scss/variables";
+
+.addColumnInput {
+  width: 100%;
+  @include flex();
+
+  &__input {
+    padding: 10px;
+    flex-grow: 2;
+    border-radius: $border-radius;
+    border: solid 1px $Silver-Chalice;
+    font-size: 16px;
+
+    &:active {
+      outline: $Gray;
+      border: solid 1px $Gray;
+    }
+
+    &:focus {
+      outline: $Gray;
+      border: solid 1px $Gray;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  &__icon {
+    padding: 10px;
+    @include flex();
+    background: #A9A9A9;
+    border-radius: $border-radius;
+    flex-grow: 1;
+    cursor: pointer;
+  }
+}

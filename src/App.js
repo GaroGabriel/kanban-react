@@ -1,4 +1,4 @@
-import {ColumnS, Testing} from "./components";
+import {ColumnS, PopUpBackground, Testing} from "./components";
 import './App.scss'
 import {Provider} from "react-redux";
 import {store} from "./redux/store";

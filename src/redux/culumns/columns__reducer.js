@@ -11,15 +11,6 @@ const columns = {
                 id: uniqid('tas'),
                 title: 'task'
             }]
-        },
-        {
-            id: uniqid('col'),
-            title: 'column 02',
-            color:'',
-            tasks: [{
-                id: uniqid('tas'),
-                title: 'task'
-            }]
         }]
 }
 
