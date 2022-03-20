@@ -4,12 +4,12 @@
 .columnsHeaderSettings {
 
   &__buttonDots {
-    @include transition_default(background);
-    &-active {
-      background: $Silver-Chalice;
-    }
-    &:hover {
-      background: $Silver-Chalice;
-    }
+    //@include transition_default(background);
+    //&-active {
+    //  background: $Silver-Chalice;
+    //}
+    //&:hover {
+    //  background: $Silver-Chalice;
+    //}
   }
 }

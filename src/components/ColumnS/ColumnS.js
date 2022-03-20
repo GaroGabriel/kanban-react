@@ -1,14 +1,24 @@
 import React from 'react';
 import './columnS.scss'
 import {Column, ColumnsHeader} from "../index";
+import {useSelector} from "react-redux";
 
 const ColumnS = () => {
+    const columns = useSelector((state) => state.columnsR.columns)
+
     return (
         <div className='columnS'>
             <ColumnsHeader/>
             <div className="columnS__wrapper">
-                <Column/>
 
+                {columns.flatMap(column => {
+                    return (
+                        <Column
+                            key={column.id}
+                            column={column}
+                        />
+                    )
+                })}
             </div>
         </div>
     );

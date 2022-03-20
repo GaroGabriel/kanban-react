@@ -8,5 +8,11 @@
   cursor: pointer;
   color: $Gondola;
   border-radius: $border-radius;
-
+  @include transition_default(background);
+  &-active {
+    background: rgba(128, 128, 128, 0.4);
+  }
+  &:hover {
+    background: rgba(128, 128, 128, 0.4);
+  }
 }
