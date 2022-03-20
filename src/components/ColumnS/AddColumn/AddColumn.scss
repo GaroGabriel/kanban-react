@@ -1,0 +1,38 @@
+@import "src/variables/scss/variables";
+@import "src/variables/scss/mixins";
+
+.addColumn {
+  width: 300px;
+  position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  @include flex(center, center, nowrap, column);
+
+
+  &__button {
+    width: 100%;
+    border-left: solid 1px $Silver-Chalice;
+    border-right: solid 1px $Silver-Chalice;
+    border-top: solid 1px $Silver-Chalice;
+    border-top-right-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+    cursor: pointer;
+    padding: 10px;
+    @include flex();
+
+    &:hover {
+      background: $RGBABackground;
+    }
+  }
+
+  &__header {
+
+  }
+
+  &__icon {
+    padding: 0 0 0 20px;
+    font-weight: 800;
+  }
+
+}

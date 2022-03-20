@@ -1,16 +1,33 @@
-@mixin flex($justify-content:center,$align-items:center,$flex-wrap:nowrap) {
+@import "./variables";
+
+@mixin flex($justify-content:center,$align-items:center,$flex-wrap:nowrap,$flex-direction:row) {
   display: flex;
   justify-content: $justify-content;
   align-items: $align-items;
   flex-wrap: $flex-wrap;
-
+  flex-direction: $flex-direction;
 }
-@mixin transition_default($transition__target:all){
+
+@mixin transition_default($transition__target:all) {
   transition: background ease-in-out 0.2s;
 }
+
+@mixin popUpBackground() {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 20;
+  background: $popupBackground;
+}
+
 
 //headers
 @mixin h5() {
   font-size: 18px;
   padding: 10px 0;
 }
+
+
+

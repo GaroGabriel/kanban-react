@@ -1,6 +1,6 @@
 import React from 'react';
 import './columnS.scss'
-import {Column, ColumnsHeader} from "../index";
+import {AddColumn, Column, ColumnsHeader} from "../index";
 import {useSelector} from "react-redux";
 
 const ColumnS = () => {
@@ -19,6 +19,7 @@ const ColumnS = () => {
                         />
                     )
                 })}
+                <AddColumn/>
             </div>
         </div>
     );

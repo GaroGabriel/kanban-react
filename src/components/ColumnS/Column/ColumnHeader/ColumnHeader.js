@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import './ColumnHeader.scss'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPlus} from "@fortawesome/free-solid-svg-icons";
@@ -7,14 +7,25 @@ import {useSelector} from "react-redux";
 
 
 const ColumnHeader = ({column}) => {
-const [showSettingsPopup,setShowSettingsPopup] = useState(false)
-   const menu =  useSelector(state=>state.columnMenu)
+    const [showSettingsPopup, setShowSettingsPopup] = useState(false)
+    const menu = useSelector(state => state.columnMenu)
     const refForPopup = useRef(null)
-    console.log(menu.items)
+
 //FUNCTIONS
     const showHideMenu = () => {
         setShowSettingsPopup(prevState => !prevState)
     }
+    const closePopup = (e) => {
+        if (showSettingsPopup) {
+            if (e.path ? !e.path.includes(refForPopup.current) : !e.composedPath().includes(refForPopup.current)) {
+                setShowSettingsPopup(false)
+            }
+        }
+    }
+    useEffect(() => {
+        document.querySelector('html').addEventListener('click', closePopup)
+        return () => document.querySelector('html').removeEventListener('click', closePopup)
+    }, [showSettingsPopup])
     return (
         <div className='columnHeader'>
             <div className="columnHeader__wrapper">
