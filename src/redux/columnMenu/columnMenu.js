@@ -1,19 +1,18 @@
 import uniqid from "uniqid";
 import {faBuildingColumns, faChartSimple} from "@fortawesome/free-solid-svg-icons";
-import {constants} from "./columnHeaderSettingsMenu__action";
 
-const columnHeaderSettingsMenu = {
+const menu = {
     header: 'Settings',
     items: [
         {
             id: uniqid(),
             icon: faChartSimple,
-            item: 'Some Command'
+            item: 'Rename Column'
         },
         {
             id: uniqid(),
             icon: faChartSimple,
-            item: 'Do Something'
+            item: 'Change Color'
         },
         {
             id: uniqid(),
@@ -23,10 +22,9 @@ const columnHeaderSettingsMenu = {
     ]
 }
 
-export const columnHeaderSettingsMenuReducer = (state = columnHeaderSettingsMenu, action) => {
-    switch (action.type) {
-        case constants:
-            return state
+
+export const columnMenu = (state=menu,action)=>{
+    switch (action.payload){
         default:
             return state
     }

@@ -2,13 +2,13 @@ import React, {useEffect, useRef, useState} from 'react';
 import './ColumnsHeaderSettings.scss'
 import {ButtonDots, Popup} from "../../index";
 import {useDispatch, useSelector} from "react-redux";
-import {getSettingsMenu} from "../../../redux/columnHeaderSetingsMenu/columnHeaderSettingsMenu__action";
+import {getSettingsMenu} from "../../../redux/columnSHeaderSetingsMenu/columnSHeaderSetingsMenu__action";
 
 
 const ColumnsHeaderSettings = () => {
 //REDUX
     const dispatch = useDispatch()
-    const menu = useSelector(state => state.columnHeaderSettingsMenuReducer)
+    const menu = useSelector(state => state.columnSHeaderSettingsMenuReducer)
     useEffect(() => {
         dispatch(getSettingsMenu())
     }, [dispatch])
