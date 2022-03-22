@@ -2,11 +2,11 @@
 
 .column{
   max-width: 300px;
+  min-width: 300px;
   border-left: solid 1px $Silver-Chalice;
   border-right: solid 1px $Silver-Chalice;
   border-bottom: solid 1px $Silver-Chalice;
   border-radius: $border-radius;
-  //overflow: hidden;
   position: relative;
   margin-right: 10px;
   margin-left: 10px;

@@ -3,18 +3,29 @@ import './AddcolumnInput.scss'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheck, faXmark} from "@fortawesome/free-solid-svg-icons";
 
-const AddcolumnInput = () => {
+const AddColumnInput = ({columnNameHandler,columnName,submitAddColorForm}) => {
     return (
-        <form className='addColumnInput' >
-            <input type="text" className='addColumnInput__input'/>
+        <form
+            className='addColumnInput'
+        onSubmit={(e)=>submitAddColorForm(e)}
+        >
+            <input
+                type="text"
+                className='addColumnInput__input'
+                onChange={(e) => columnNameHandler(e)}
+                value={columnName}
+                autoFocus
+            />
             <FontAwesomeIcon
+                onClick={()=>submitAddColorForm()}
                 className='addColumnInput__icon'
                 icon={faCheck}/>
             <FontAwesomeIcon
                 className='addColumnInput__icon'
                 icon={faXmark}/>
+
         </form>
     );
 };
 
-export default AddcolumnInput;
+export default AddColumnInput;

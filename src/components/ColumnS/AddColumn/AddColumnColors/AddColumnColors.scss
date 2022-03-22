@@ -1,0 +1,27 @@
+@import "./src/variables/scss/mixins";
+@import "./src/variables/scss/variables";
+
+.addColumnColors {
+  width: 100%;
+  @include flex(space-around, center, wrap,);
+  border-bottom: solid 1px $Silver-Chalice;
+  border-left: solid 1px $Silver-Chalice;
+  border-right: solid 1px $Silver-Chalice;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+
+  &__color {
+    height: 20px;
+    width: 20px;
+    border-radius: $border-radius;
+    cursor: pointer;
+    margin: 10px 15px;
+    box-shadow: $box-shadow;
+    text-align: center;
+    color: $Black;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}

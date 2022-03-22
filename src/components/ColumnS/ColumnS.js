@@ -11,7 +11,7 @@ const ColumnS = () => {
             <ColumnsHeader/>
             <div className="columnS__wrapper">
 
-                {columns.flatMap(column => {
+                {columns.map(column => {
                     return (
                         <Column
                             key={column.id}

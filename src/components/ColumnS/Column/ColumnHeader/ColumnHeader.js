@@ -27,10 +27,10 @@ const ColumnHeader = ({column}) => {
         return () => document.querySelector('html').removeEventListener('click', closePopup)
     }, [showSettingsPopup])
     return (
-        <div className='columnHeader'>
+        <div className='columnHeader' style={{background:column.color}}>
             <div className="columnHeader__wrapper">
                 <h3 className="columnHeader__title">{column.title}</h3>
-                <span className="columnHeader__taskCount">8</span>
+                <span className="columnHeader__taskCount">{column.tasks.length}</span>
             </div>
             <div className="columnHeader__wrapper">
                 <div className="columnHeader__menu">
