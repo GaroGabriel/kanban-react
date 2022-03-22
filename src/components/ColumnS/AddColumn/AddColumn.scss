@@ -2,7 +2,8 @@
 @import "src/variables/scss/mixins";
 
 .addColumn {
-  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
   position: relative;
   margin-right: 10px;
   margin-left: 10px;

@@ -24,7 +24,7 @@ const menu = {
 
 
 export const columnMenu = (state=menu,action)=>{
-    switch (action.payload){
+    switch (action.type){
         default:
             return state
     }
