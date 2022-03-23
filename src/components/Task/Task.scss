@@ -1,0 +1,10 @@
+@import "./src/variables/scss/variables";
+
+.task {
+  border-radius: $border-radius;
+  border: solid 1px $Gondola;
+  min-height: 100px;
+  cursor: move;
+  user-select: none;
+  padding: 10px;
+}

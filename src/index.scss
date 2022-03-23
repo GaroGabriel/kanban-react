@@ -1,35 +1,47 @@
 @import "src/variables/scss/variables";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html , body {
-    font-family: 'Roboto', sans-serif;
+html, body {
+  font-family: 'Roboto', sans-serif;
 }
 
 /* width */
 *::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+  width: 10px;
+  height: 10px;
 }
 
 /* Track */
 *::-webkit-scrollbar-track {
-    background: $Seashell;
+  background: $Seashell;
 
 }
 
 /* Handle */
 *::-webkit-scrollbar-thumb {
-    background: $Silver-Chalice;
-    border-radius: $border-radius;
+  background: $Silver-Chalice;
+  border-radius: $border-radius;
 }
 
 /* Handle on hover */
 *::-webkit-scrollbar-thumb:hover {
-    background: $Gray;
+  background: $Gray;
+}
+
+input, textarea {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: solid 1px $Gray;
+  border-radius: $border-radius;
+font-family:'Roboto', sans-serif;
+  &:active {
+    outline: solid 1px $Gondola;
+  }
 }

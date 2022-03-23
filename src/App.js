@@ -1,4 +1,4 @@
-import {ColumnS, PopUpBackground, Testing} from "./components";
+import {AddTaskPopup, ColumnS, PopUpBackground, Testing} from "./components";
 import './App.scss'
 import {Provider} from "react-redux";
 import {store} from "./redux/store";
@@ -10,6 +10,7 @@ function App() {
             <Provider store={store}>
                 <ColumnS/>
                 {/*<Testing/>*/}
+                <AddTaskPopup/>
             </Provider>
         </div>
     );

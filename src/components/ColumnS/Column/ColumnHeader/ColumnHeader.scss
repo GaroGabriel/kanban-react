@@ -6,11 +6,12 @@
   position: sticky;
   width: 100%;
   top: -20px;
-  border-top-left-radius:$border-radius ;
-  border-top-right-radius:$border-radius ;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
   left: 0;
   padding: 5px;
-  &__taskCount{
+
+  &__taskCount {
     border-bottom: solid 1px $Gray;
     border-right: solid 1px $Gray;
     border-radius: 50%;
@@ -18,9 +19,38 @@
     min-width: 30px;
     text-align: center;
     box-shadow: $box-shadow;
-    margin:0 20px;
+    margin: 0 20px;
   }
+
   &__wrapper {
     @include flex()
+  }
+
+  &__add {
+    cursor: pointer;
+    position: relative;
+    padding: 0 8px;
+    z-index: 1000;
+    @include transition_default(all) ;
+    &:after {
+      content: '';
+      position: absolute;
+      min-width: 60px;
+      background: $Alto;
+      padding:0 2px;
+      text-align: center;
+      top: -30%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 12px;
+      border-radius: $border-radius;
+    }
+
+
+    &:hover {
+      &:after {
+        content: 'Add Task';
+      }
+    }
   }
 }

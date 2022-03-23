@@ -9,7 +9,7 @@
 }
 
 @mixin transition_default($transition__target:all) {
-  transition: background ease-in-out 0.2s;
+  transition:$transition__target ease-in-out 3s;
 }
 
 @mixin popUpBackground() {

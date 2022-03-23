@@ -1,5 +1,13 @@
 # KANBAN
 
+
+# [v1.0.4](https://github.com/GaroGabriel/kanban-react)
+- add column color menu
+- logic for adding column in component and into redux
+- adding column {name,color,count}
+- add task popup
+
+
 # [v1.0.4](https://github.com/GaroGabriel/kanban-react)
 - redux setup
 - debug columns header settings popup close
