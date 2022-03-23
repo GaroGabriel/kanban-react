@@ -6,9 +6,12 @@ export {default as ColumnsHeaderSettings} from './ColumnS/ColumnsHeaderSettings/
 export {default as ColumnHeader} from './ColumnS/Column/ColumnHeader/ColumnHeader'
 export {default as AddColumn} from './ColumnS/AddColumn/AddColumn'
 export {default as AddColumnInput} from './ColumnS/AddColumn/AddcolumnInput/AddcolumnInput'
+export {default as Task} from './Task/Task'
+export {default as AddTaskPopup} from './Task/AddTaskPopup/AddTaskPopup'
 
 
 // UX
 export {default as ButtonDots} from './UI/ButtonDots/ButtonDots'
 export {default as Popup} from './UI/Popup/Popup'
+export {default as ButtonSubmit} from './UI/ButtonSubmit/ButtonSubmit'
 

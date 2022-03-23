@@ -10,7 +10,6 @@ const ColumnS = () => {
         <div className='columnS'>
             <ColumnsHeader/>
             <div className="columnS__wrapper">
-
                 {columns.map(column => {
                     return (
                         <Column

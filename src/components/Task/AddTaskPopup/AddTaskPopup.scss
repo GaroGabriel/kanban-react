@@ -1,0 +1,29 @@
+@import "./src/variables/scss/variables";
+@import "./src/variables/scss/mixins";
+
+.addTaskPopup {
+  @include popUpBackground();
+
+  &__form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $white;
+    border-radius: $border-radius;
+    padding: 30px;
+    max-width: 70%;
+    min-width: 400px;
+    @include flex(center, flex-start, nowrap, column)
+  }
+
+  &__header {
+   text-align: center;
+    width: 100%;
+  }
+
+  &__label {
+    margin: 15px 0;
+    @include flex(center, flex-start, nowrap, column)
+  }
+}
