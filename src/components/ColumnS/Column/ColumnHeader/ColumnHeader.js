@@ -6,7 +6,7 @@ import {ButtonDots, Popup} from "../../../index";
 import {useSelector} from "react-redux";
 
 
-const ColumnHeader = ({column}) => {
+const ColumnHeader = ({column,openAddTaskPopupHandler}) => {
     const [showSettingsPopup, setShowSettingsPopup] = useState(false)
     const menu = useSelector(state => state.columnMenu)
     const refForPopup = useRef(null)
@@ -48,7 +48,9 @@ const ColumnHeader = ({column}) => {
                 <div className="columnHeader__add">
                     <FontAwesomeIcon
                         className='popup__icon'
-                        icon={faPlus}/>
+                        icon={faPlus}
+                        onClick={()=>openAddTaskPopupHandler()}
+                    />
                 </div>
             </div>
         </div>

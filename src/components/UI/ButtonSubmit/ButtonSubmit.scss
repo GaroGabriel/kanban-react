@@ -2,14 +2,12 @@
 @import "./src/variables/scss/mixins";
 
 
-.ButtonSubmit {
-    //todo change colors to variables
-  background: #6e6ef1;
-    color:#ffffff;
+.Button {
   cursor: pointer;
   padding: 10px 20px;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
+  user-select: none;
   @include transition_default('box-shadow');
   &:hover {
     box-shadow: none;

@@ -27,6 +27,7 @@ const ColumnsHeaderSettings = () => {
         }
     }
 
+    //todo close popup from background
 
     useEffect(() => {
         document.querySelector('html').addEventListener('click', closePopup)

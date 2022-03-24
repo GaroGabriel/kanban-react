@@ -1,8 +1,11 @@
 import React from 'react';
 import './ButtonSubmit.scss'
-const ButtonSubmit = ({buttonTex}) => {
+const ButtonSubmit = ({buttonTex,classNameProp,onClickProp}) => {
     return (
-        <div className='ButtonSubmit'>
+        <div
+            className={`Button ${classNameProp}`}
+        onClick={()=>onClickProp()}
+        >
             {buttonTex}
         </div>
     );

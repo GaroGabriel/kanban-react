@@ -3,11 +3,14 @@ import './Column.scss'
 import {ColumnHeader, Task} from "../../index";
 
 
-const Column = ({column}) => {
+const Column = ({column,openAddTaskPopupHandler}) => {
 
     return (
         <div className='column'>
-            <ColumnHeader column={column}/>
+            <ColumnHeader
+                column={column}
+                openAddTaskPopupHandler={openAddTaskPopupHandler}
+            />
             {column.tasks.map(task=>{
                 return(
                     <Task task={task} key={task.id}/>

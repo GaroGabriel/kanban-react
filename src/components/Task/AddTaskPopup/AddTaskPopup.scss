@@ -18,12 +18,43 @@
   }
 
   &__header {
-   text-align: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__input,&__textarea {
     width: 100%;
   }
 
   &__label {
     margin: 15px 0;
-    @include flex(center, flex-start, nowrap, column)
+    @include flex(center, flex-start, nowrap, column);
+    width: 100%;
+  }
+
+  &__buttonsWrapper {
+    display: flex;
+  }
+
+  .Button {
+    margin: 0 10px 0 0;
+  }
+
+  &__ok {
+    background: $Blue;
+    color: $white;
+
+    &:hover {
+      background: $Blue-hover;
+    }
+  }
+
+  &__cancel {
+    background: $Red;
+    color: $white;
+
+    &:hover {
+      background: $Red-hover;
+    }
   }
 }
