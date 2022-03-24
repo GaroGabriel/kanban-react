@@ -3,7 +3,7 @@ import './columnS.scss'
 import {AddColumn, Column, ColumnsHeader} from "../index";
 import {useSelector} from "react-redux";
 
-const ColumnS = () => {
+const ColumnS = ({openAddTaskPopupHandler}) => {
     const columns = useSelector((state) => state.columnsR.columns)
 
     return (
@@ -15,6 +15,7 @@ const ColumnS = () => {
                         <Column
                             key={column.id}
                             column={column}
+                            openAddTaskPopupHandler={openAddTaskPopupHandler}
                         />
                     )
                 })}
