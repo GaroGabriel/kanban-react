@@ -49,7 +49,7 @@ const ColumnHeader = ({column,openAddTaskPopupHandler}) => {
                     <FontAwesomeIcon
                         className='popup__icon'
                         icon={faPlus}
-                        onClick={()=>openAddTaskPopupHandler()}
+                        onClick={()=>openAddTaskPopupHandler(column.id)}
                     />
                 </div>
             </div>

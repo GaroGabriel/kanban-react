@@ -29,6 +29,12 @@ export const columnsR = (state = columns, action) => {
                 columns: newColumn
             }
         }
+        case constantsColumn.ADD__TASK:
+          //todo make this reducer
+            console.log(state.columns)
+            return {
+                ...state
+            }
         default:
             return state
     }
