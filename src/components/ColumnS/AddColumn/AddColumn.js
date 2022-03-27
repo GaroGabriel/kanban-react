@@ -32,8 +32,6 @@ const AddColumn = () => {
             dispatch(addColumn(columnName, checkedColor[0].color))
             setShowInputs(false)
             setColumnName('')
-        }else{
-            console.log('ssss')
         }
 
     }
