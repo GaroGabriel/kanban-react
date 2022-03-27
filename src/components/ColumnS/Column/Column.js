@@ -1,19 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Column.scss'
 import {ColumnHeader, Task} from "../../index";
 
 
-const Column = ({column,openAddTaskPopupHandler}) => {
+const Column = (props) => {
 
     return (
         <div className='column'>
             <ColumnHeader
-                column={column}
-                openAddTaskPopupHandler={openAddTaskPopupHandler}
+                column={props.column}
+                openAddTaskPopupHandler={props.openAddTaskPopupHandler}
             />
-            {column.tasks.map(task=>{
+            {props.column.tasks.map(task=>{
                 return(
-                    <Task task={task} key={task.id} columnColor={column.color}/>
+                    <Task
+                        task={task}
+                        key={task.id}
+                        column={props.column}
+                        onDragStartHandler={props.onDragStartHandler}
+                        onDragEndHandler={props.onDragEndHandler}
+                        columnColor={props.column.color}/>
                 )
             })}
         </div>
