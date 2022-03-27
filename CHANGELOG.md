@@ -2,6 +2,7 @@
 
 # [v1.0.5](https://github.com/GaroGabriel/kanban-react)
 - adding new task
+- drag and drop functional
 
 - 
 # [v1.0.4](https://github.com/GaroGabriel/kanban-react)

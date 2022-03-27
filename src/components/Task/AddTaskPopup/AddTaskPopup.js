@@ -6,11 +6,16 @@ const AddTaskPopup = ({closeAddTaskPopupHandler, addTaskHandler}) => {
 
     const [newTaskName, setNewTaskName] = useState('')
     const [newTaskDescription, setNewTaskNameDescription] = useState('')
-
+const onSubmitHandler=(e)=>{
+        e && e.preventDefault()
+    addTaskHandler(newTaskName, newTaskDescription)
+}
 
     return (
         <div className='addTaskPopup'>
-            <form className="addTaskPopup__form">
+            <form className="addTaskPopup__form" onSubmit={(e)=>{
+                onSubmitHandler(e)
+            }}>
                 <h3 className="addTaskPopup__header">Add Task</h3>
                 <label className='addTaskPopup__label'>
 
@@ -40,7 +45,7 @@ const AddTaskPopup = ({closeAddTaskPopupHandler, addTaskHandler}) => {
                         buttonTex='Ok'
                         classNameProp={'addTaskPopup__ok'}
                         onClickProp={() => {
-                            addTaskHandler(newTaskName, newTaskDescription)
+                            onSubmitHandler()
                         }}
                     />
                     <ButtonSubmit
