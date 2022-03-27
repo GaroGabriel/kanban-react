@@ -1,10 +1,21 @@
 @import "./src/variables/scss/variables";
+@import "./src/variables/scss/mixins";
 
 .task {
   border-radius: $border-radius;
   border: solid 1px $Gondola;
   min-height: 100px;
+  overflow: hidden;
   cursor: move;
   user-select: none;
   padding: 10px;
+position: relative;
+  &__color{
+    background: green;
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    top: 0;
+    left: 0;
+  }
 }

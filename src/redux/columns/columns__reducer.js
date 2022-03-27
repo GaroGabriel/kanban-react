@@ -16,11 +16,7 @@ export const columnsR = (state = columns, action) => {
                     id: uniqid('col'),
                     title: action.payload.name,
                     color: action.payload.color,
-                    tasks: [{
-                        id: uniqid('tas'),
-                        title: 'task',
-                        info:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, impedit!',
-                    }]
+                    tasks: []
                 }
             ]
 
@@ -30,10 +26,15 @@ export const columnsR = (state = columns, action) => {
             }
         }
         case constantsColumn.ADD__TASK:
-          //todo make this reducer
-            console.log(state.columns)
+            for(let column of state.columns){
+                if(column.id ===action.payload.columnId){
+                    column.tasks= [...column.tasks,{id:  uniqid('tas'), title: action.payload.title, info:action.payload.info}]
+                }
+            }
+
             return {
-                ...state
+                ...state,
+
             }
         default:
             return state

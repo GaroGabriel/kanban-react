@@ -13,7 +13,7 @@ const Column = ({column,openAddTaskPopupHandler}) => {
             />
             {column.tasks.map(task=>{
                 return(
-                    <Task task={task} key={task.id}/>
+                    <Task task={task} key={task.id} columnColor={column.color}/>
                 )
             })}
         </div>

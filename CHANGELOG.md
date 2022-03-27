@@ -1,6 +1,9 @@
 # KANBAN
 
+# [v1.0.5](https://github.com/GaroGabriel/kanban-react)
+- adding new task
 
+- 
 # [v1.0.4](https://github.com/GaroGabriel/kanban-react)
 - add column color menu
 - logic for adding column in component and into redux
