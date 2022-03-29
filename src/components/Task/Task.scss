@@ -9,9 +9,14 @@
   cursor: move;
   user-select: none;
   padding: 10px;
-position: relative;
+  position: relative;
   z-index: 1;
-  &__color{
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  &__color {
     background: green;
     position: absolute;
     height: 100%;
