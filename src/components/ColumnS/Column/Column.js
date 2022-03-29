@@ -17,8 +17,6 @@ const Column = (props) => {
                         task={task}
                         key={task.id}
                         column={props.column}
-                        onDragStartHandler={props.onDragStartHandler}
-                        onDragEndHandler={props.onDragEndHandler}
                         columnColor={props.column.color}/>
                 )
             })}
